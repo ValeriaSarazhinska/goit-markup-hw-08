@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid $header-gray-border;
+  padding: 24px 0 25px 0;
+}
+
+.container {
+  @extend %container
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

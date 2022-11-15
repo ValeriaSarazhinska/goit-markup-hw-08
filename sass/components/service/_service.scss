@@ -1,0 +1,25 @@
+.service {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.svg");
+  background-repeat: no-repeat;
+}
+
+.service__title {
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-main;
+  text-align: center;
+  width: 696px;
+}
+
+.service__button {
+  @extend %button
+}

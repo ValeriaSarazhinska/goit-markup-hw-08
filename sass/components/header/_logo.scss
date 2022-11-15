@@ -1,0 +1,9 @@
+.nav__logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  margin-right: 93px;
+}
+
+.nav__sub-logo {
+ @extend %sub-log
+}

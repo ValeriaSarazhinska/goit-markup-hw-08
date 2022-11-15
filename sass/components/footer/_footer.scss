@@ -1,0 +1,13 @@
+.container{
+  @extend %container
+}
+.footer {
+  background-color: $gray-background;
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}

@@ -1,0 +1,35 @@
+
+.follow__tittle {
+  font-size: 14px;
+  font-weight: 700;
+  color: $white-main;
+  text-transform: uppercase;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+
+.follow__list {
+  display: flex;
+  gap: 10px;
+}
+
+.follow__button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  color: $white-main;
+  background-color: $gray-button-background;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    background-color: $blue-main;
+  }
+}
+
+.follow__icon {
+  fill: currentColor;
+}

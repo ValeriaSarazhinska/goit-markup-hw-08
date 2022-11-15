@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $company-gray-border;
+  background-color: $white-main;
+  gap: 10px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    background-color: $blue-main;
+    color: $white-main;
+
+  }
+
+}
+
+.card__icon {
+  fill: currentColor;
+}
