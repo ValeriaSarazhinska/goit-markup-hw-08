@@ -1,14 +1,26 @@
 .qualities {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
-
-.container{
-  @extend %container
-}
-
 
 .qualities__list {
-  @extend %ul
+  @extend %ul;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.qualities__list li {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .about__link {
@@ -30,13 +42,15 @@
 }
 
 .qualities__icon-container {
-  width: 270px;
+  width: auto;
   height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   background-color: $light-gray-background;
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .qualities__subtitle {
@@ -44,6 +58,9 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 10px;
+  @media (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .qualities__info {

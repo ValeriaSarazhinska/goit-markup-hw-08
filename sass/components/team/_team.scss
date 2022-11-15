@@ -1,18 +1,21 @@
 .team {
   background-color: $light-gray-background;
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
-
-.container {
-  @extend %container;
-}
-
 .team__title {
   @extend %h2;
 }
 
 .team__list {
   @extend %ul;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .team__link {
@@ -20,6 +23,12 @@
   border-radius: 0 0 4px 4px;
   background-color: $white-main;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .team__info {

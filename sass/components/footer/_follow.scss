@@ -4,8 +4,12 @@
   font-weight: 700;
   color: $white-main;
   text-transform: uppercase;
+  text-align: center;
   line-height: 1.14;
   margin-bottom: 20px;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .follow__list {
@@ -32,4 +36,12 @@
 
 .follow__icon {
   fill: currentColor;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1200px) {
+    align-items: center;
+  }
 }

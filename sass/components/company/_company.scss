@@ -1,23 +1,29 @@
-.container {
-  @extend %container;
-}
-
 .company__title {
   @extend %h2
 }
 
 .company__list {
-  @extend %ul
+  @extend %ul;
+  flex-wrap: wrap;
 }
 
 .company {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .company__card {
-  width: 170px;
+  width: 205px;
   height: 92px;
   color: $company-gray-border;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .company__link {
