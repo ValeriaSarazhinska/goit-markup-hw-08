@@ -1,3 +1,13 @@
+.subscribe__input {
+  display: flex;
+  @media (max-width: 1200px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
 
 .subscribe__title {
   display: block;
@@ -8,7 +18,8 @@
 }
 
 .subscribe__email {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -22,6 +33,10 @@
   &:hover, &:focus {
     border-color: $blue-active;
   }
+
+  @media (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 
@@ -29,7 +44,6 @@
   @extend %button;
   padding: 10px 13px 10px 28px;
   margin: 0;
-  margin-top: 20px;
 }
 
 
