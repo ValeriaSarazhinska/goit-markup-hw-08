@@ -13,11 +13,27 @@
 
 .address {
   flex-direction: column;
+
   @media (max-width: 768px) {
     text-align: center;
+
   }
   @media (min-width: 768px) and (max-width: 1199px) {
     margin-right: 100px;
+    text-align: center;
+    //display: flex;
+    //align-items: center;
+  }
+}
+.address__l{
+  @media (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    //display: flex;
+    //align-items: center;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+
   }
 }
 

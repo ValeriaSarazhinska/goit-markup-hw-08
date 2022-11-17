@@ -31,16 +31,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //padding: 5px;
   gap: 10px;
   font-weight: 500;
-  font-size: 12px;
   letter-spacing: 0.02em;
   color: $gray-substring;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,&:focus{
     color:$blue-main;
+  }
+  @media (max-width: 1199px) {
+    font-size: 12px;
   }
 }
 

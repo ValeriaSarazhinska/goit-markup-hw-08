@@ -8,10 +8,11 @@
   flex-direction: column;
   gap: 60px;
   justify-content: center;
-  align-items: baseline;
+
   @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
   }
   @media (max-width: 767px) {
     align-items: center;
