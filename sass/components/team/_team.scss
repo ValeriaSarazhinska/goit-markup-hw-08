@@ -5,6 +5,7 @@
     padding: 94px 0;
   }
 }
+
 .team__title {
   @extend %h2;
 }
@@ -29,6 +30,31 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
+}
+//
+.image {
+  //display: block;
+  //max-width: 100%;
+  //height: auto;
+  //@media (min-width: 480px) {
+  //  image {
+  //    max-width: 450px;
+  //  }
+  //
+  //}
+  //@media (min-width: 768px) {
+  //  image {
+  //    max-width: 354px;
+  //  }
+  //
+  //}
+  //@media (min-width: 600px) {
+  //  image {
+  //    max-width: 270px;
+  //  }
+  //
+  //}
+
 }
 
 .team__info {

@@ -196,7 +196,31 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__link">
-                    <img alt="Ігор Дем'яненко" src="images/product-designer.jpg">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px),"
+                                srcSet="images/desk/product_designer-270@1x.jpg 1x,images/desk/product_designer-270@2x.jpg 2x"
+                        />
+                        <source
+                                media="(min-width: 768px),"
+                                srcSet="images/table/product_designer-354@1x.jpg 1x, images/table/product_designer-354@2x.jpg 2x "
+                        />
+                        <source
+                                media="(min-width: 480px),"
+                                srcSet="images/mobile/product_designer-450@1x.jpg 1x, images/mobile/product_designer-450@2x.jpg 2x"
+                        />
+                    <img alt="Ігор Дем'яненко" class="image"  src="images/product-designer.jpg"
+                         srcSet="images/mobile/product_designer-450@1x.jpg 1x, images/mobile/product_designer-450@2x.jpg 2x" />
+<!--                         sizes="-->
+<!--                            (min-width: 1200px) 270px,-->
+<!--                            (min-width: 768px) 354px,-->
+<!--                            (max-width: 480px) 450px "-->
+<!--                         srcset="-->
+<!--                         images/desk/product_designer-270@1x.jpg 270w,-->
+<!--                         images/table/product_designer-354@1x.jpg 354w,-->
+<!--                         images/mobile/product_designer-450@1x.jpg 450w"-->
+
+                    </picture>
                     <div class="team__info">
                         <h3 class="team__member">Ігор Дем'яненко</h3>
                         <p class="team__position">Product Designer</p>
@@ -233,7 +257,22 @@
                     </div>
                 </li>
                 <li class="team__link">
-                    <img alt="Ольга Рєпіна" src="images/frontend-developer.jpg">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px),"
+                                srcSet="images/desk/frontend_developer-270@1x.jpg 1x, images/desk/frontend_developer-270@2x.jpg 2x"
+                        />
+                        <source
+                                media="(min-width: 768px),"
+                                srcSet="images/table/frontend_developer-354@1x.jpg 1x, images/table/frontend_developer-354@2x.jpg 2x "
+                        />
+                        <source
+                                media="(min-width: 480px),"
+                                srcSet="images/mobile/frontend_developer-450@1x.jpg 1x, images/mobile/frontend_developer-450@2x.jpg 2x"
+                        />
+                    <img alt="Ольга Рєпіна" src="images/frontend-developer.jpg"
+                         srcSet="images/mobile/frontend_developer-450@1x.jpg 1x, images/mobile/frontend_developer-450@2x.jpg 2x" />
+                    </picture>
                     <div class="team__info">
                         <h3 class="team__member">Ольга Рєпіна</h3>
                         <p class="team__position">Frontend Developer</p>
@@ -270,7 +309,24 @@
                     </div>
                 </li>
                 <li class="team__link">
-                    <img alt="Микола Тарасов" src="images/marketing.jpg">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px),"
+                                srcSet="images/desk/marketing-270@1x.jpg 1x, images/desk/marketing-270@2x.jpg 2x"
+                        />
+                        <source
+                                media="(min-width: 768px),"
+                                srcSet="images/table/marketing-354@1x.jpg 1x, images/table/marketing-354@2x.jpg 2x "
+                        />
+                        <source
+                                media="(min-width: 480px),"
+                                srcSet="images/mobile/marketing-450@1x.jpg 1x, images/mobile/marketing-450@2x.jpg 2x"
+                        />
+                    <img alt="Микола Тарасов" src="images/marketing.jpg"
+                         srcSet="images/mobile/marketing-450@1x.jpg 1x, images/mobile/marketing-450@2x.jpg 2x" />
+                    >
+
+                    </picture>
                     <div class="team__info">
                         <h3 class="team__member">Микола Тарасов</h3>
                         <p class="team__position">Marketing</p>
@@ -307,7 +363,23 @@
                     </div>
                 </li>
                 <li class="team__link">
-                    <img alt="Михайло Єрмаков" src="images/ui-designer.jpg">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px),"
+                                srcSet="images/desk/ui_designer-270@1x.jpg 1x, images/desk/ui_designer-270@2x.jpg 2x"
+                        />
+                        <source
+                                media="(min-width: 768px),"
+                                srcSet="images/table/ui_designer-354@1x.jpg 1x, images/table/ui_designer-354@2x.jpg 2x "
+                        />
+                        <source
+                                media="(min-width: 480px),"
+                                srcSet="images/mobile/ui_designer-450@1x.jpg 1x, images/mobile/ui_designer-450@2x.jpg 2x"
+                        />
+                    <img alt="Михайло Єрмаков" src="images/ui-designer.jpg"
+                         srcSet="images/mobile/ui_designer-450@1x.jpg 1x, images/mobile/ui_designer-450@2x.jpg 2x" />
+
+                    </picture>
                     <div class="team__info">
                         <h3 class="team__member">Михайло Єрмаков</h3>
                         <p class="team__position">UI Designer</p>
@@ -450,12 +522,12 @@
         <form class="subscribe">
             <label class="subscribe__title" for="subscribe-email">Підпишіться на розсилку</label>
             <div class="subscribe__input">
-            <input class="subscribe__email" id="subscribe-email" name="email" placeholder="E-mail" type="email"/>
-            <button class="subscribe__button" type="submit">Підписатися
-                <svg class="subscribe__icon" height="24px" width=" 24px">
-                    <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-            </button>
+                <input class="subscribe__email" id="subscribe-email" name="email" placeholder="E-mail" type="email"/>
+                <button class="subscribe__button" type="submit">Підписатися
+                    <svg class="subscribe__icon" height="24px" width=" 24px">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
             </div>
 
         </form>
@@ -464,64 +536,42 @@
 
 
 <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-        <svg
-                fill="currentColor"
-                height="24"
-                viewBox="0 0 20 20"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg">
-            <path
-                    clip-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    fill-rule="evenodd"
-            ></path>
-        </svg>
-    </button>
+    <div>
+        <button class="menu-toggle js-close-menu">
+            <svg
+                    fill="currentColor"
+                    height="24"
+                    viewBox="0 0 20 20"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                <path
+                        clip-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        fill-rule="evenodd"
+                ></path>
+            </svg>
+        </button>
 
-    <ul class="mobile-nav">
-        <li><a class="nav__link" href="#">Студія</a></li>
-        <li><a class="nav__link" href="portfolio.html">Портфоліо</a></li>
-        <li><a class="nav__link" href="#">Контакти</a></li>
-    </ul>
+        <ul class="mobile-nav">
+            <li><a class="nav__link mobile-nav__link--active" href="#">Студія</a></li>
+            <li><a class="nav__link" href="portfolio.html">Портфоліо</a></li>
+            <li><a class="nav__link" href="#">Контакти</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="mobile-contacts">
+            <li><a class="nav__link mobile-contacts__link--active" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="nav__link mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
 
-    <ul class="mobile-contacts">
-        <li><a class="nav__link mobile-contacts__link--active" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a class="nav__link mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    </ul>
-
-    <ul class="mobile-socials">
-        <li><a class="mobile-socials__link" href="#">Instagram</a></li>
-        <li><a class="mobile-socials__link" href="#">Twitter</a></li>
-        <li><a class="mobile-socials__link" href="#">Facebook</a></li>
-        <li><a class="mobile-socials__link--last" href="#">LinkedIn</a></li>
-    </ul>
+        <ul class="mobile-socials">
+            <li><a class="mobile-socials__link" href="#">Instagram</a></li>
+            <li><a class="mobile-socials__link" href="#">Twitter</a></li>
+            <li><a class="mobile-socials__link" href="#">Facebook</a></li>
+            <li><a class="mobile-socials__link--last" href="#">LinkedIn</a></li>
+        </ul>
+    </div>
 </div>
-<!--<div class="menu-container js-menu-container" id="mobile-menu">-->
-<!--    <button class="menu-toggle js-close-menu">-->
-<!--        <svg-->
-<!--                fill="currentColor"-->
-<!--                height="24"-->
-<!--                viewBox="0 0 20 20"-->
-<!--                width="24"-->
-<!--                xmlns="http://www.w3.org/2000/svg"-->
-<!--        >-->
-<!--            <path-->
-<!--                    clip-rule="evenodd"-->
-<!--                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"-->
-<!--                    fill-rule="evenodd"-->
-<!--            ></path>-->
-<!--        </svg>-->
-<!--    </button>-->
-
-<!--    <ul class="mobile-menu">-->
-<!--        <li><a class="link" href="">About</a></li>-->
-<!--        <li><a class="link" href="">Products</a></li>-->
-<!--        <li><a class="link" href="">Contacts</a></li>-->
-<!--        <li><a class="link" href="">Career</a></li>-->
-<!--    </ul>-->
-<!--</div>-->
-
 <script
         crossorigin="anonymous"
         defer

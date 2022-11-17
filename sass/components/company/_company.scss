@@ -5,6 +5,7 @@
 .company__list {
   @extend %ul;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .company {

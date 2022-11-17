@@ -76,7 +76,9 @@ body {
   padding: 32px;
   background-color: $white-main;
   z-index: 999;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -95,7 +97,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 302px;
 }
 
 .mobile-contacts {
@@ -107,6 +108,7 @@ body {
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-socials__link {
